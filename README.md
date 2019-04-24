@@ -4,7 +4,7 @@ Welcome to the tutorials repository for the AutoImpute package!
 This repo contains a series of Jupyter Notebooks that introduce users to the autoimpute and explore the package's features and capabilities. To get started, review the following tutorials:  
 
 1. [Exploring Missingness Patterns](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/exploring_missingness.ipynb)  
-2. [Mastering the Imputers and Controlling their Behavior](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics.ipynb)  
+2. [Getting the Most out of the Imputer Classes: Part I](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_I.ipynb)  
 3. [Comparing Imputation Methods](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/comparing_imputation_methods.ipynb)   
 
 
