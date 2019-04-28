@@ -1,12 +1,11 @@
-# AutoImpute Tutorials
-Welcome to the tutorials repository for the AutoImpute package!
+Welcome to the tutorials page for the Autoimpute package!
 
-This repo contains a series of Jupyter Notebooks that introduce users to the autoimpute and explore the package's features and capabilities. To get started, review the following tutorials:  
+This page contains multiple tutorials that introduce users to Autoimpute and explore the package's features & capabilities. To get started, review the following tutorials:  
 
-1. [Exploring Missingness Patterns](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/exploring_missingness.ipynb)  
-2. [Getting the Most out of the Imputer Classes: Part I](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_I.ipynb)
-3. [Getting the Most out of the Imputer Classes: Part II](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb)  
+* [Exploring Missingness Patterns](exploring-missingness.md)  
+* [Getting the Most out of the Imputer Classes: Part I](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_I.ipynb)
+* [Getting the Most out of the Imputer Classes: Part II](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb)  
 4. [Comparing Imputation Methods](https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/comparing_imputation_methods.ipynb)   
 
 
-We plan to add more tutorials soon to walk users through more advanced usage of the autoimpute package. In the meantime, please contact us if you have any questions. Our information can be found [in the autoimpute package](https://github.com/kearnz/autoimpute/blob/master/AUTHORS.rst).
+We plan to add more tutorials soon to walk users through more advanced usage of the Autoimpute package. In the meantime, please contact us if you have any questions. Our information can be found [in the Autoimpute package repo](https://github.com/kearnz/autoimpute/blob/master/AUTHORS.rst).
