@@ -1,3 +1,4 @@
 title: Autoimpute Tutorials
 description: A gentle introduction to the Autoimpute package and its features!
 theme: jekyll-theme-cayman
+exclude: ['./README.md']
