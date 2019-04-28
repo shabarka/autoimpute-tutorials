@@ -14571,7 +14571,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_I.ipynb">Part I</a> of this series motivates the need for imputation and reviews the main design considerations behind Autoimpute Imputers.</p>
+<p><a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I.html">Part I</a> of this series motivates the need for imputation and reviews the main design considerations behind Autoimpute Imputers.</p>
 
 </div>
 </div>
@@ -14739,7 +14739,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-How-the-SingleImputer-Works-under-the-Hood"><a href="#2.-How-the-SingleImputer-Works-under-the-Hood">2. How the SingleImputer Works under the Hood</a><a class="anchor-link" href="#2.-How-the-SingleImputer-Works-under-the-Hood">&#182;</a></h2><p>A lot has to happen behind the scenes for the <code>SingleImputer</code> to meet Autoimpute's design goals addressed in <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Consideration-behind-Autoimpute-Imputers">Part I, section 2</a>. This section peeks under the hood of the <code>SingleImputer</code> to explore how it makes the imputation process easy, familiar, and flexible. Additionally, users are more adequately prepared to utilize Imputers if they have a solid understanding of <code>Imputer</code> mechanics. In this section, we cover:</p>
+<h2 id="2.-How-the-SingleImputer-Works-under-the-Hood"><a href="#2.-How-the-SingleImputer-Works-under-the-Hood">2. How the SingleImputer Works under the Hood</a><a class="anchor-link" href="#2.-How-the-SingleImputer-Works-under-the-Hood">&#182;</a></h2><p>A lot has to happen behind the scenes for the <code>SingleImputer</code> to meet Autoimpute's design goals addressed in <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Considerations-behind-Autoimpute-Imputers">Part I, section 2</a>. This section peeks under the hood of the <code>SingleImputer</code> to explore how it makes the imputation process easy, familiar, and flexible. Additionally, users are more adequately prepared to utilize Imputers if they have a solid understanding of <code>Imputer</code> mechanics. In this section, we cover:</p>
 <ol>
     <li>How the SingleImputer Fits the Imputation Model</li>
     <li>What are "series-imputers"?</li>
@@ -14752,7 +14752,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.1-How-the-SingleImputer-Fits-the-Imputation-Model">2.1 How the SingleImputer Fits the Imputation Model<a class="anchor-link" href="#2.1-How-the-SingleImputer-Fits-the-Imputation-Model">&#182;</a></h3><p>Recall from <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Consideration-behind-Autoimpute-Imputers">Part I, section 2</a> that <code>Autoimpute</code> Imputers set smart defaults for each argument. Therefore, we can instantiate and fit an imputer that can handle any dataset we give it. Let's create a default instance of the <code>SingleImputer</code> class and fit it to our toy dataset.</p>
+<h3 id="2.1-How-the-SingleImputer-Fits-the-Imputation-Model">2.1 How the SingleImputer Fits the Imputation Model<a class="anchor-link" href="#2.1-How-the-SingleImputer-Fits-the-Imputation-Model">&#182;</a></h3><p>Recall from <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Considerations-behind-Autoimpute-Imputers">Part I, section 2</a> that <code>Autoimpute</code> Imputers set smart defaults for each argument. Therefore, we can instantiate and fit an imputer that can handle any dataset we give it. Let's create a default instance of the <code>SingleImputer</code> class and fit it to our toy dataset.</p>
 
 </div>
 </div>
@@ -15146,7 +15146,7 @@ PMMImputer(am=None, asd=10, bm=None, bsd=10, fill_value=&#39;random&#39;, init=&
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Consideration-behind-Autoimpute-Imputers">Part I, section 2</a>, we introduced the <strong>design goals</strong> of <code>Autoimpute</code>, noting that we want the package to be easy to use, flexible, and familiar to those with experience using packages in Python's machine learning ecosystem. In this section, we discuss the <strong>design patterns</strong> behind <code>Autoimpute</code> that help us realize our goals for the package. In this tutorial, we focus on the design considerations for Imputers only, specifically the <code>SingleImputer</code> and its series-imputer counterparts.</p>
+<p>In <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-I#2.-The-Design-Considerations-behind-Autoimpute-Imputers">Part I, section 2</a>, we introduced the <strong>design goals</strong> of <code>Autoimpute</code>, noting that we want the package to be easy to use, flexible, and familiar to those with experience using packages in Python's machine learning ecosystem. In this section, we discuss the <strong>design patterns</strong> behind <code>Autoimpute</code> that help us realize our goals for the package. In this tutorial, we focus on the design considerations for Imputers only, specifically the <code>SingleImputer</code> and its series-imputer counterparts.</p>
 
 </div>
 </div>

@@ -14570,7 +14570,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb">Part II</a> addresses how the <code>SingleImputer</code> works under the hood.</p>
+<p><a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-II.html">Part II</a> addresses how the <code>SingleImputer</code> works under the hood.</p>
 
 </div>
 </div>
@@ -15480,7 +15480,7 @@ ValueError: Input contains NaN, infinity or a value too large for dtype(&#39;flo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-The-Design-Considerations-behind-Autoimpute-Imputers"><a href="#2.-The-Design-Consideration-behind-Autoimpute-Imputers">2. The Design Considerations behind Autoimpute Imputers</a><a class="anchor-link" href="#2.-The-Design-Considerations-behind-Autoimpute-Imputers">&#182;</a></h2><p><div>We designed Autoimpute Imputers with three goals in mind:</div></p>
+<h2 id="2.-The-Design-Considerations-behind-Autoimpute-Imputers"><a href="#2.-The-Design-Considerations-behind-Autoimpute-Imputers">2. The Design Considerations behind Autoimpute Imputers</a><a class="anchor-link" href="#2.-The-Design-Considerations-behind-Autoimpute-Imputers">&#182;</a></h2><p><div>We designed Autoimpute Imputers with three goals in mind:</div></p>
 <p><ol>
     <li><b>Make Imputation Easy</b>. Imputation can be done in one line of code.</li>
     <li><b>Make Imputation Familiar to Python Users</b>. Autoimpute Imputers follows the design patterns of sklearn.</li>
@@ -16076,7 +16076,7 @@ The code segments below demonstrate Autoimpute's ease of use and familiarity.</p
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The transformed dataset contains imputations in place of previously missing values. Here, we used mean imputation, although we offer many imputation strategies that may be more appropriate. We show these strategies in <a href="https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb">Part II</a> of this series. We can <strong>easily retrieve the index of the the imputed values</strong> should we want to assess the imputations themselves. The index of imputed values live in the Imputer's <code>imputed_</code> attribute. As with <code>sklearn</code>, public attributes of Imputers contain an underscore suffix.</p>
+<p>The transformed dataset contains imputations in place of previously missing values. Here, we used mean imputation, although we offer many imputation strategies that may be more appropriate. We show these strategies in <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-II.html">Part II</a> of this series. We can <strong>easily retrieve the index of the the imputed values</strong> should we want to assess the imputations themselves. The index of imputed values live in the Imputer's <code>imputed_</code> attribute. As with <code>sklearn</code>, public attributes of Imputers contain an underscore suffix.</p>
 
 </div>
 </div>
@@ -16246,7 +16246,7 @@ Argument: visit; Default: default
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Below is a brief description of each argument. <a href="https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb">Part II</a> of this series explains how to use these arguments to control imputation.</p>
+<p>Below is a brief description of each argument. <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-II.html">Part II</a> of this series explains how to use these arguments to control imputation.</p>
 <ul>
     <li><b>copy</b>: Whether or not to copy the dataset during the transform place. If False, imputations happen in place.</li>
     <li><b>imp_kwgs</b>: Dictionary of arguments to fine-tune imputation on a specific column or for a specific imputation strategy.</li>
@@ -16264,7 +16264,7 @@ Argument: visit; Default: default
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This concludes Part I of this series. This tutorial is merely an introduction to the Autoimpute Imputers. We motivated the need for Autoimpute Imputers and introduced the package design at the highest level, but we barely scratched the surface for what Imputers can do. In the code segment above, we peeked at the arguments an <code>Imputer</code> takes. These arguments give the user full control over the imputation process and hold the power and flexibility behind the <code>Imputer</code> classes. <a href="https://github.com/kearnz/autoimpute-tutorials/blob/master/tutorials/imputer_mechanics_II.ipynb">Part II</a> of this series walks through these arguments in depth, giving users examples of how the arguments tailor imputation to fit specific needs.</p>
+<p>This concludes Part I of this series. This tutorial is merely an introduction to the Autoimpute Imputers. We motivated the need for Autoimpute Imputers and introduced the package design at the highest level, but we barely scratched the surface for what Imputers can do. In the code segment above, we peeked at the arguments an <code>Imputer</code> takes. These arguments give the user full control over the imputation process and hold the power and flexibility behind the <code>Imputer</code> classes. <a href="https://kearnz.github.io/autoimpute-tutorials/imputer-mechanics-II.html">Part II</a> of this series walks through these arguments in depth, giving users examples of how the arguments tailor imputation to fit specific needs.</p>
 
 </div>
 </div>
