@@ -14607,7 +14607,7 @@ div#notebook {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Available from autoimpute.utils
 -------------------------------
-[&#39;check_data_structure&#39;, &#39;check_missingness&#39;, &#39;check_nan_columns&#39;, &#39;check_predictors_fit&#39;, &#39;check_strategy_allowed&#39;, &#39;check_strategy_fit&#39;, &#39;checks&#39;, &#39;feature_corr&#39;, &#39;feature_cov&#39;, &#39;flux&#39;, &#39;helpers&#39;, &#39;inbound&#39;, &#39;influx&#39;, &#39;md_locations&#39;, &#39;md_pairs&#39;, &#39;md_pattern&#39;, &#39;outbound&#39;, &#39;outflux&#39;, &#39;patterns&#39;, &#39;proportions&#39;]
+[&#39;check_data_structure&#39;, &#39;check_missingness&#39;, &#39;check_nan_columns&#39;, &#39;check_predictors_fit&#39;, &#39;check_strategy_allowed&#39;, &#39;check_strategy_fit&#39;, &#39;checks&#39;, &#39;flux&#39;, &#39;helpers&#39;, &#39;inbound&#39;, &#39;influx&#39;, &#39;md_locations&#39;, &#39;md_pairs&#39;, &#39;md_pattern&#39;, &#39;nullility_corr&#39;, &#39;nullility_cov&#39;, &#39;outbound&#39;, &#39;outflux&#39;, &#39;patterns&#39;, &#39;proportions&#39;]
 
 </pre>
 </div>
@@ -14624,7 +14624,7 @@ div#notebook {
 <h3 id="Package-Overview">Package Overview<a class="anchor-link" href="#Package-Overview">&#182;</a></h3><hr>
 <p>The <code>utils</code> module contains checks to ensure datasets play nicely with imputation methods and functions to explore patterns in missing data. Note that <code>check_data_structure</code>, <code>check_missingness</code>, and <code>check_nan_columns</code> are decorators used to create new utility methods and build custom <code>Imputers</code>. This is a more advanced topic covered which we will cover in a future tutorial. For now, we'll explore the following methods to get started:</p>
 <ul>
-<li><code>feature_cov</code> and <code>feature_corr</code></li>
+<li><code>nullility_cov</code> and <code>nullility_corr</code></li>
 <li><code>proportions</code>, <code>md_locations</code>, <code>md_pattern</code>, and <code>md_pairs</code></li>
 <li><code>inbound</code>, <code>outbound</code>, <code>influx</code>, <code>outflux</code>, and <code>flux</code></li>
 </ul>
@@ -14762,7 +14762,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Covariance-and-Correlation">Covariance and Correlation<a class="anchor-link" href="#Covariance-and-Correlation">&#182;</a></h3><p>The <code>utils</code> module contains simple methods (<code>feature_cov</code> and <code>feature_corr</code>) to example the covariance and correlation matrix. Each method takes a dataframe as an argument. Missing values are <strong>dropped by default</strong>. Therefore, these methods return the covariance / correlation of observed features.</p>
+<h3 id="Nullility-Covariance-and-Correlation">Nullility Covariance and Correlation<a class="anchor-link" href="#Nullility-Covariance-and-Correlation">&#182;</a></h3><p>The <code>utils</code> module contains simple methods (<code>nullility_cov</code> and <code>nullility_corr</code>) to examine a dataset's nullility covariance and correlation. Each method takes a DataFrame as an argument. Fully observed columns do not have any nullility covariance or correlation, so their rows and columns <strong>dropped by default</strong>.</p>
 
 </div>
 </div>
@@ -14772,8 +14772,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Covariance matrix after missing records dropped</span>
-<span class="n">au</span><span class="o">.</span><span class="n">feature_cov</span><span class="p">(</span><span class="n">missing_data</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Nullility covariance matrix after missing records dropped</span>
+<span class="n">au</span><span class="o">.</span><span class="n">nullility_cov</span><span class="p">(</span><span class="n">missing_data</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14817,21 +14817,21 @@ div#notebook {
   <tbody>
     <tr>
       <th>A</th>
-      <td>17.066667</td>
-      <td>11.35</td>
-      <td>0.666667</td>
+      <td>0.214286</td>
+      <td>0.178571</td>
+      <td>-0.107143</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>11.350000</td>
-      <td>12.70</td>
-      <td>-2.000000</td>
+      <td>0.178571</td>
+      <td>0.267857</td>
+      <td>-0.160714</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>0.666667</td>
-      <td>-2.00</td>
-      <td>3.500000</td>
+      <td>-0.107143</td>
+      <td>-0.160714</td>
+      <td>0.267857</td>
     </tr>
   </tbody>
 </table>
@@ -14849,8 +14849,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Correlation matrix after missing records dropped</span>
-<span class="n">au</span><span class="o">.</span><span class="n">feature_corr</span><span class="p">(</span><span class="n">missing_data</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Nullility correlation matrix after missing records dropped</span>
+<span class="n">au</span><span class="o">.</span><span class="n">nullility_corr</span><span class="p">(</span><span class="n">missing_data</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14895,19 +14895,19 @@ div#notebook {
     <tr>
       <th>A</th>
       <td>1.000000</td>
-      <td>0.765722</td>
-      <td>0.114708</td>
+      <td>0.745356</td>
+      <td>-0.447214</td>
     </tr>
     <tr>
       <th>B</th>
-      <td>0.765722</td>
+      <td>0.745356</td>
       <td>1.000000</td>
-      <td>-1.000000</td>
+      <td>-0.600000</td>
     </tr>
     <tr>
       <th>C</th>
-      <td>0.114708</td>
-      <td>-1.000000</td>
+      <td>-0.447214</td>
+      <td>-0.600000</td>
       <td>1.000000</td>
     </tr>
   </tbody>
