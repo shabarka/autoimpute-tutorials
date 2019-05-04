@@ -1,6 +1,6 @@
-### Welcome to the tutorials page for the Autoimpute package!
+### Welcome to the Tutorials Page for the Autoimpute package!
 
-This page contains multiple tutorials that introduce users to Autoimpute and explore the package's features & capabilities. To get started, review the following tutorials:  
+This page contains multiple tutorials that introduce users to [Autoimpute](https://github.com/kearnz/autoimpute) and explore the package's features & capabilities. To get started, review the following tutorials:  
 
 * [Exploring Missingness Patterns](exploring-missingness.html)  
 * [Getting the Most out of the Imputer Classes: Part I](imputer-mechanics-I.html)
